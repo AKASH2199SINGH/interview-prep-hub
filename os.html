@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operating System Interview Questions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-white min-h-screen p-4 sm:p-6 md:p-8" data-skill="OS">
+    
+    <div id="main-container" class="max-w-7xl mx-auto">
+        <section id="questions-section">
+            <div class="glass-card rounded-2xl p-6 sm:p-8">
+                <a href="index.html" class="flex items-center gap-2 mb-6 text-lg hover:text-gray-300 transition-colors no-underline text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                    Back to Categories
+                </a>
+                <div class="flex items-center gap-4 mb-6">
+                    <img src="images\os.png" alt="OS Logo" class="category-logo">
+                    <h2 id="category-title" class="text-3xl font-bold"></h2>
+                </div>
+                <div id="questions-list" class="space-y-4">
+                    <!-- Questions will be dynamically inserted here by script.js -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script>
+        VANTA.NET({
+            el: "body",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x00bfff, // Neon Blue
+            backgroundColor: 0x1a0a2e,
+            points: 12.00,
+            maxDistance: 25.00,
+            spacing: 18.00
+        })
+    </script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

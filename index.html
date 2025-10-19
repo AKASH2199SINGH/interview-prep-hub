@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interview Prep Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="text-white min-h-screen p-4 sm:p-6 md:p-8">
+    <div id="main-container" class="max-w-7xl mx-auto">
+      <!-- Header -->
+      <header class="text-center my-8 flex flex-col items-center">
+        <img
+          src="images\interview.png"
+          alt="Interview Hub Logo"
+          class="h-20 w-20 mb-4 main-logo-effect"
+        />
+        <h1 class="text-4xl sm:text-5xl font-bold tracking-tight">
+          Interview Prep Hub
+        </h1>
+        <p class="text-lg text-gray-300 mt-2">
+          Your personal collection of interview questions.
+        </p>
+      </header>
+
+      <!-- Skill Categories Section -->
+      <section id="categories-section">
+        <div
+          id="categories-grid"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+        >
+          <!-- C --><a
+            href="c.html"
+            class="glass-card rounded-2xl p-6 cursor-pointer flex flex-col justify-center items-center h-48 no-underline"
+          >
+            <img src="images\c.png" alt="C Logo" class="skill-logo" />
+            <h3 class="text-2xl font-semibold text-center text-white mt-4">
+              C
+            </h3>
+          </a>
+          <!-- C++ --><a
+            href="cpp.html"
+            class="glass-card rounded-2xl p-6 cursor-pointer flex flex-col justify-center items-center h-48 no-underline"
+          >
+            <img src="images\cpp.png" alt="C++ Logo" class="skill-logo" />
+            <h3 class="text-2xl font-semibold text-center text-white mt-4">
+              C++
+            </h3>
+          </a>
+          <!-- Python & Libraries --><a
+            href="python.html"
+            class="glass-card rounded-2xl p-6 cursor-pointer flex flex-col justify-center items-center h-48 no-underline"
+          >
+            <img src="images\py.png" alt="Python Logo" class="skill-logo" />
+            <h3 class="text-2xl font-semibold text-center text-white mt-4">
+              Python & Libraries
+            </h3>
+          </a>
+          <!-- HTML5 --><a
+            href="html5.html"
+            class="glass-card rounded-2xl p-6 cursor-pointer flex flex-col justify-center items-center h-48 no-underline"
+          >
+            <img src="images\html5.png" alt="HTML5 Logo" class="skill-logo" />
+            <h3 class="text-2xl font-semibold text-center text-white mt-4">
+              HTML5
+            </h3>
+          </a>
+          <!-- CSS3 --><a
+            href="css3.html"
+            class="glass-card rounded-2xl p-6 cursor-pointer flex flex-col justify-center items-center h-48 no-underline"
+          >
+            <img src="images\css3.png" alt="CSS3 Logo" class="skill-logo" />
+            <h3 class="text-2xl font-semibold text-center text-white mt-4">
+              CSS3
+            </h3>
+          </a>
+          <!-- JavaScript --><a
+            href="javascript.html"
+            class="glass-card rounded-2xl p-6 cursor-pointer flex flex-col justify-center items-center h-48 no-underline"
+          >
+            <img src="images\js.png" alt="JavaScript Logo" class="skill-logo" />
+            <h3 class="text-2xl font-semibold text-center text-white mt-4">
+              JavaScript
+            </h3>
+          </a>
+          <!-- Bootstrap --><a
+            href="bootstrap.html"
+            class="glass-card rounded-2xl p-6 cursor-pointer flex flex-col justify-center items-center h-48 no-underline"
+          >
+            <img
+              src="images\boot.png"
+              alt="Bootstrap Logo"
+              class="skill-logo"
+            />
+            <h3 class="text-2xl font-semibold text-center text-white mt-4">
+              Bootstrap
+            </h3>
+          </a>
+           <!-- os --><a
+            href="os.html"
+            class="glass-card rounded-2xl p-6 cursor-pointer flex flex-col justify-center items-center h-48 no-underline"
+          >
+            <img src="images\os.png" alt="os Logo" class="skill-logo" />
+            <h3 class="text-2xl font-semibold text-center text-white mt-4">
+              operatingSystem
+            </h3>
+          </a>
+           <!-- SE --><a
+            href="se.html"
+            class="glass-card rounded-2xl p-6 cursor-pointer flex flex-col justify-center items-center h-48 no-underline"
+          >
+            <img src="images\se.png" alt="se Logo" class="skill-logo" />
+            <h3 class="text-2xl font-semibold text-center text-white mt-4">
+                SoftwareEngineering
+            </h3>
+          </a>
+           <!-- dbms --><a
+            href="dbms.html"
+            class="glass-card rounded-2xl p-6 cursor-pointer flex flex-col justify-center items-center h-48 no-underline"
+          >
+            <img src="images\dbms.png" alt="dbms Logo" class="skill-logo" />
+            <h3 class="text-2xl font-semibold text-center text-white mt-4">
+                DBMS
+            </h3>
+          </a>
+          <!-- CN --><a
+            href="cn.html"
+            class="glass-card rounded-2xl p-6 cursor-pointer flex flex-col justify-center items-center h-48 no-underline"
+          >
+            <img src="images\cn.png" alt=" cn Logo" class="skill-logo" />
+            <h3 class="text-2xl font-semibold text-center text-white mt-4">
+                ComputerNetwork
+            </h3>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script>
+      VANTA.NET({
+        el: "body",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0x00bfff, // Neon Blue
+        backgroundColor: 0x1a0a2e,
+        points: 12.0,
+        maxDistance: 25.0,
+        spacing: 18.0,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+/* Base styling */
+body {
+    font-family: 'Inter', sans-serif;
+    /* The VANTA script will set the background, this is a fallback */
+    background-color: #1a0a2e;
+}
+
+/* Vanta.js background container */
+#vanta-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place it behind all content */
+}
+
+/* Glassmorphism card effect */
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* Logo styles */
+.skill-logo {
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+    /* This filter can help turn black SVGs into white to match the theme */
+    filter: invert(90%) sepia(5%) saturate(1621%) hue-rotate(180deg) brightness(118%) contrast(100%);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.glass-card:hover .skill-logo {
+    transform: scale(1.15);
+    filter: invert(90%) sepia(5%) saturate(1621%) hue-rotate(180deg) brightness(118%) contrast(100%) drop-shadow(0 0 8px rgba(0, 191, 255, 0.7));
+}
+
+.category-logo {
+    height: 48px;
+    width: 48px;
+    object-fit: contain;
+    filter: invert(90%) sepia(5%) saturate(1621%) hue-rotate(180deg) brightness(118%) contrast(100%);
+}
+
+
+/* Accordion styles */
+.question-item .answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s cubic-bezier(0.25, 0.1, 0.25, 1.0), padding 0.6s ease;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.question-item.active .answer {
+    max-height: 2000px; /* Increased for long answers */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.question-item.active .arrow {
+     transform: rotate(180deg);
+}
+
+/* Styles for rich content inside answers */
+.answer-content pre {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    padding: 1rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #f3f4f6;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.answer-content code {
+    font-family: monospace;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+}
+
+.answer-content pre code {
+     background-color: transparent;
+     padding: 0;
+}
+
+.answer-content ul, .answer-content ol {
+    list-style-position: inside;
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.answer-content li {
+    margin-bottom: 0.5rem;
+}
+
+.answer-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.answer-content th, .answer-content td {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 8px;
+    text-align: left;
+}
+
+.answer-content th {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
