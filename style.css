@@ -122,4 +122,35 @@ body {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+/* Footer Styles */
+.site-footer {
+    width: 100%;
+    max-width: 1280px; /* Corresponds to max-w-7xl */
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin-top: 3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: #9ca3af; /* gray-400 */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* gap-6 */
+    margin-bottom: 0.75rem;
+}
+
+.social-icon svg {
+    width: 28px;
+    height: 28px;
+    fill: #9ca3af; /* gray-400 */
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover svg {
+    fill: #ffffff; /* white */
+    transform: scale(1.15);
+}
 
